@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">vidSaver</string>
+    <string name="url_error">Please enter valid url\n</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_start">start</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="facebook">facebook</string>
+    <string name="whatsapp">whatsApp</string>
+    <string name="instagram">instaGram</string>
+    <string name="twitter">twitter</string>
+    <string name="vk">vk</string>
+    <string name="vimeo">vimeo</string>
+    <string name="tiktok">tiktok</string>
+    <string name="twitch">twitch</string>
+    <string name="please_wait_we_are_fetching_data">PLease wait we are fetching data</string>
+    <string name="download_video_audio">Download video + audio</string>
+    <string name="download_audio">Download audio</string>
+    <string name="add_to_list">Add to list</string>
+    <string name="enter_your_url">Enter your url</string>
+    <string name="soundcloud">soundcloud</string>
+    <string name="tumbler">tumbler</string>
+    <string name="weibo">weibo</string>
+    <string name="spotify">spotify</string>
+    <string name="supported_platfrom">Supported Platfrom</string>
+    <string name="vidsaver">vidSaver</string>
+
+
+    <string name="get_tiktok_free_likes_and_folowers">Get Tiktok free likes and followers</string>
+    <string name="let_your_king_learn_english_alphabet_easily">Let your kids learn english alphabet easily</string>
+    <string name="earn_and_bost_your_brain_by_playing_this_game">Earn and boost your brain by playing this game</string>
+    <string name="earn_money_by_playing_games">Earn money by playing games</string>
+    <string name="exchange_likes_and_follow_on_likee">Exchange likes and follow on likee</string>
+    <string name="get_follow_on_likee">Get follow on Likee</string>
+    <string name="enjoy_most_famous_ludo_game">Enjoy most famous ludo game</string>
+    <string name="get_free_folowers_on_instagram">Get free folowers on Instagram</string>
+    <string name="download_video_from_facebook_insagram_tiktok_likee">Download video from Facebook, Instagram, Tiktok ,Likee</string>
+    <string name="try_other_apps">Try other apps</string>
+
+</resources>
