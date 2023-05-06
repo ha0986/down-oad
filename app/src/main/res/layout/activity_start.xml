@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".start">
 
 
@@ -14,43 +16,37 @@
         android:layout_marginTop="16dp"
         android:text="@string/vidsaver"
         android:textColor="#9C27B0"
-        android:textSize="40sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="40sp" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/spl" />
+
+    <Button
+        android:id="@+id/startPage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Go to Download Page"
+        android:textAllCaps="false" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="80dp"
         android:text="@string/supported_platfrom"
         android:textColor="#673AB7"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/startPage" />
+        android:textStyle="bold" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -118,10 +114,7 @@
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -188,10 +181,7 @@
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+        android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -254,15 +244,4 @@
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/startPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Go to Download Page"
-        android:textAllCaps="false"
-        app:cornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

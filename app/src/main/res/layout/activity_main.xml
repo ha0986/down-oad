@@ -7,28 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/paste"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
-        android:text="Paste"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
-
-    <Button
-        android:id="@+id/more"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="40dp"
-        android:text="More App"
-        app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -41,26 +19,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/fetch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
-        android:text="Fetch Downloadable link"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
-
-    <Button
         android:id="@+id/quee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="8dp"
         android:text="Multiple Download"
-        app:cornerRadius="20dp"
+        app:icon="@drawable/baseline_queue_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -74,8 +40,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="20dp"
         android:animateLayoutChanges="true"
         app:boxBackgroundColor="#FFFFFF"
@@ -97,11 +64,10 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -109,12 +75,56 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="32dp"
         app:adSize="BANNER"
         app:adUnitId="ca-app-pub-9422110628550448/2200055605"
-        app:layout_constraintBottom_toTopOf="@+id/quee"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="1dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <Button
+            android:id="@+id/fetch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:text="Download"
+            android:textAllCaps="false"
+            app:icon="@drawable/baseline_get_app_24" />
+
+        <Button
+            android:id="@+id/paste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paste"
+            android:textAllCaps="false"
+            app:icon="@drawable/baseline_content_paste_24" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="More"
+        app:icon="@drawable/baseline_widgets_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

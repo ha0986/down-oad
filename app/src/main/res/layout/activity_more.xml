@@ -40,6 +40,7 @@
                 android:textColor="@color/text"
                 app:cornerRadius="10dp"
                 app:icon="@drawable/to"
+                app:iconSize="40dp"
                 app:iconTintMode="multiply"
                 app:strokeColor="#33FFFFFF"
                 app:strokeWidth="2dp" />
@@ -54,6 +55,7 @@
                 android:textColor="@color/text"
                 app:cornerRadius="10dp"
                 app:icon="@drawable/abc"
+                app:iconSize="40dp"
                 app:iconTintMode="multiply"
                 app:strokeColor="#33FFFFFF"
                 app:strokeWidth="2dp" />
@@ -68,6 +70,7 @@
                 android:textColor="@color/text"
                 app:cornerRadius="10dp"
                 app:icon="@drawable/puzzle"
+                app:iconSize="40dp"
                 app:iconTintMode="multiply"
                 app:strokeColor="#33FFFFFF"
                 app:strokeWidth="2dp" />
@@ -82,6 +85,7 @@
                 android:textColor="@color/text"
                 app:cornerRadius="10dp"
                 app:icon="@drawable/word"
+                app:iconSize="40dp"
                 app:iconTintMode="multiply"
                 app:strokeColor="#33FFFFFF"
                 app:strokeWidth="2dp" />
@@ -96,6 +100,7 @@
                 android:textColor="@color/text"
                 app:cornerRadius="10dp"
                 app:icon="@drawable/tikfollow"
+                app:iconSize="40dp"
                 app:iconTintMode="multiply"
                 app:strokeColor="#33FFFFFF"
                 app:strokeWidth="2dp" />
@@ -125,6 +130,7 @@
                 android:textColor="@color/text"
                 app:cornerRadius="10dp"
                 app:icon="@drawable/ludo"
+                app:iconSize="40dp"
                 app:iconTintMode="multiply"
                 app:strokeColor="#33FFFFFF"
                 app:strokeWidth="2dp" />
@@ -139,6 +145,7 @@
                 android:textColor="@color/text"
                 app:cornerRadius="10dp"
                 app:icon="@drawable/insta"
+                app:iconSize="40dp"
                 app:iconTintMode="multiply"
                 app:strokeColor="#33FFFFFF"
                 app:strokeWidth="2dp" />
@@ -154,6 +161,7 @@
                 android:textColor="@color/text"
                 app:cornerRadius="10dp"
                 app:icon="@drawable/download"
+                app:iconSize="40dp"
                 app:iconTintMode="multiply"
                 app:strokeColor="#1AFFFFFF"
                 app:strokeWidth="2dp" />

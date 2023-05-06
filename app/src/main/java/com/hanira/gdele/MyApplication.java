@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.DefaultLifecycleObserver;
 import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.ProcessLifecycleOwner;
 
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
@@ -58,8 +59,8 @@ public class MyApplication extends Application
                 this,
                 initializationStatus -> {});
 
+        ProcessLifecycleOwner.get().getLifecycle().addObserver(this);
         appOpenAdManager = new AppOpenAdManager();
-
 
 
 
