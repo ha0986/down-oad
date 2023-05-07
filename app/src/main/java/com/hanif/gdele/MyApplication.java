@@ -1,4 +1,4 @@
-package com.hanira.gdele;
+package com.hanif.gdele;
 
 import android.app.Activity;
 import android.app.Application;
@@ -23,7 +23,6 @@ import com.google.android.gms.ads.appopen.AppOpenAd;
 import com.google.android.gms.ads.appopen.AppOpenAd.AppOpenAdLoadCallback;
 import com.yausername.aria2c.Aria2c;
 import com.yausername.ffmpeg.FFmpeg;
-import com.yausername.youtubedl_android.BuildConfig;
 import com.yausername.youtubedl_android.YoutubeDL;
 import com.yausername.youtubedl_android.YoutubeDLException;
 
@@ -83,7 +82,6 @@ public class MyApplication extends Application
 
             @Override
             public void onError(Throwable e) {
-                if(BuildConfig.DEBUG) Log.e(TAG, "failed to initialize youtubedl-android", e);
                 Toast.makeText(getApplicationContext(), "initialization failed: " + e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
             }
         });
@@ -140,7 +138,7 @@ public class MyApplication extends Application
     private class AppOpenAdManager {
 
         private static final String LOG_TAG = "AppOpenAdManager";
-        private static final String AD_UNIT_ID = "ca-app-pub-3940256099942544/3419835294";
+        private static final String AD_UNIT_ID = "ca-app-pub-9422110628550448/5421131225";
 
         private AppOpenAd appOpenAd = null;
         private boolean isLoadingAd = false;

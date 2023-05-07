@@ -1,4 +1,4 @@
-package com.hanira.gdele;
+package com.hanif.gdele;
 
 
 import android.Manifest;
@@ -80,16 +80,13 @@ public class MainActivity extends AppCompatActivity {
         fetch = findViewById(R.id.fetch);
         quee = findViewById(R.id.quee);
         paste = findViewById(R.id.paste);
-        mores = findViewById(R.id.more);
         progressbar = findViewById(R.id.progressBar2);
 
 
         progressbar.setVisibility(View.GONE);
 
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            downloaNotification();
-        }
+
         fetch.setOnClickListener(view -> {
             inputedLink = String.valueOf(input.getText());
             if (inputedLink.contains("http://") || inputedLink.contains("https://")) {
@@ -120,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mores.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, more.class)));
+
 
 
         quee.setOnClickListener(v -> getInput());
@@ -319,34 +316,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    @RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
-    private void downloaNotification() {
 
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel("myCh", "My channel", NotificationManager.IMPORTANCE_DEFAULT);
-            NotificationManager manager = getSystemService(NotificationManager.class);
-            manager.createNotificationChannel(channel);
-
-
-            NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "notifyDownload")
-                    .setSmallIcon(R.drawable.ic_launcher_foreground)
-                    .setContentTitle(title)
-                    .setPriority(NotificationCompat.PRIORITY_DEFAULT);
-
-
-            Notification notification = builder.build();
-            NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(this);
-
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 1);
-                return;
-            }
-            notificationManagerCompat.notify(1, notification);
-        }
-
-
-    }
 
 
 }

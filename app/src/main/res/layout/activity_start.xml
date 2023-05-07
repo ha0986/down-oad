@@ -9,239 +9,158 @@
     tools:context=".start">
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/vidsaver"
-        android:textColor="#9C27B0"
-        android:textSize="40sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/spl" />
-
-    <Button
-        android:id="@+id/startPage"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="Go to Download Page"
-        android:textAllCaps="false" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="@string/supported_platfrom"
-        android:textColor="#673AB7"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="4dp">
+            android:orientation="vertical">
 
-            <ImageButton
-                android:layout_width="wrap_content"
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/facebook"
-                app:srcCompat="@drawable/facebook" />
-        </androidx.cardview.widget.CardView>
+                android:layout_marginTop="16dp"
+                android:text="@string/vidsaver"
+                android:textAlignment="center"
+                android:textColor="#9C27B0"
+                android:textSize="40sp" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="4dp">
-
-            <ImageButton
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/whatsapp"
-                app:srcCompat="@drawable/whatsapp" />
-        </androidx.cardview.widget.CardView>
+                android:layout_gravity="center_horizontal"
+                android:text="@string/supported_platfrom"
+                android:textAlignment="center"
+                android:textColor="#673AB7"
+                android:textStyle="bold" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="4dp">
-
-            <ImageButton
+            <ImageView
+                android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/instagram"
-                app:srcCompat="@drawable/instagram" />
-        </androidx.cardview.widget.CardView>
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/spl" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="4dp">
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/twitter"
-                app:srcCompat="@drawable/twitter" />
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
+            <Button
+                android:id="@+id/facebook"
 
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Download facebook reels and video"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/facebook"
+                app:iconSize="40dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#33FFFFFF"
+                app:strokeWidth="2dp" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="4dp">
+            <Button
+                android:id="@+id/whatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Download video from whatsapp"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/whatsapp"
+                app:iconSize="40dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#33FFFFFF"
+                app:strokeWidth="2dp" />
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/vk"
-                app:srcCompat="@drawable/vk" />
-        </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/instagram"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text=" Download video from instagram"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/instagram"
+                app:iconSize="40dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#33FFFFFF"
+                app:strokeWidth="2dp" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="4dp">
+            <Button
+                android:id="@+id/twitter"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Download video from Twitter"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/twitter"
+                app:iconSize="40dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#33FFFFFF"
+                app:strokeWidth="2dp" />
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/vimeo"
-                app:srcCompat="@drawable/vimeo" />
-        </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Try other apps made by us"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/baseline_widgets_24"
+                app:iconSize="40dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#33FFFFFF"
+                app:strokeWidth="2dp" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="4dp">
+            <Button
+                android:id="@+id/rate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="PLease Rate us to help to to grow"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/rate"
+                app:iconSize="40dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#33FFFFFF"
+                app:strokeWidth="2dp" />
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/tiktok"
-                app:srcCompat="@drawable/tiktok" />
-        </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/vimeo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/enjoy_most_famous_ludo_game"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/vimeo"
+                app:iconSize="40dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#33FFFFFF"
+                app:strokeWidth="2dp" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="4dp">
+            <Button
+                android:id="@+id/vk"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/get_free_folowers_on_instagram"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/vk"
+                app:iconSize="40dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#33FFFFFF"
+                app:strokeWidth="2dp" />
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/spotify"
-                app:srcCompat="@drawable/spotify" />
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
+            <Button
+                android:id="@+id/twitch"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/download_video_from_facebook_insagram_tiktok_likee"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/twitch"
+                app:iconSize="40dp"
+                app:iconTintMode="multiply"
+                app:strokeColor="#1AFFFFFF"
+                app:strokeWidth="2dp" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="4dp">
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/weibo"
-                app:srcCompat="@drawable/weibo" />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="4dp">
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/twitch"
-                app:srcCompat="@drawable/twitch" />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="4dp">
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/tumbler"
-                app:srcCompat="@drawable/tumblr" />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="4dp">
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/soundcloud"
-                app:srcCompat="@drawable/soundcloud" />
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

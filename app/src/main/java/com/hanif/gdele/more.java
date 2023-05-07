@@ -1,4 +1,4 @@
-package com.hanira.gdele;
+package com.hanif.gdele;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +19,7 @@ public class more extends AppCompatActivity {
         Button abc = findViewById(R.id.abc);
         Button puzzle = findViewById(R.id.puzzle);
         Button word = findViewById(R.id.word);
-        Button tikfollow = findViewById(R.id.tikfollow);
+        Button tikfollow = findViewById(R.id.more);
         Button tiklikes = findViewById(R.id.tiklikes);
         Button ludo = findViewById(R.id.ludo);
         Button likee = findViewById(R.id.likee);

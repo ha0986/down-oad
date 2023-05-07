@@ -1,4 +1,4 @@
-package com.hanira.gdele;
+package com.hanif.gdele;
 
 import android.content.Context;
 
